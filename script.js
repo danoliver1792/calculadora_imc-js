@@ -31,8 +31,10 @@ function imc() {
         resultado.textContent = `${nome} seu IMC é ${valorIMC}, você está ${classificacao}`;
 
     } else {
+        // retorna uma mensagem para o usuário caso todos os campos não estejam preenchidos
         resultado.textContent = "Preencha todos os campos";
     }
 }
 
+// chamando a função para cálculo do IMC assim que o usuário clicar no botão
 calcular.addEventListener('click', imc);
